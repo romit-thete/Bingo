@@ -57,7 +57,7 @@ while numbers:
     if user_inp.lower() in ['q', 'e']:
         confirm = input("\n[WARNING!!] This will exit the game!\nTo continue playing, type 'play'.\n"
                         "To exit, press the Enter key or type 'yes'...\n")
-        if confirm == '' or confirm in ['yes', 'y', 'q', 'e', 'exit', 'quit']:
+        if confirm == '' or confirm.lower() in ['yes', 'y', 'q', 'e', 'exit', 'quit']:
             if drawn_list:
                 print("Total Numbers drawn out:\n{}\n".format(drawn_list))
             print('Thanks for playing! Have a great day!!')
